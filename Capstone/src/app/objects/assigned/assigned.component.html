@@ -1,0 +1,18 @@
+<div class="col-md-6">
+  <h4>Assigned</h4>
+  <form>
+    <mat-form-field>
+        <input matInput type="text" placeholder="Name" required name="name" [(ngModel)]="assign.assigned_Name">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input matInput type="text" placeholder="Email" required name="email" [(ngModel)]="assign.assigned_Email" >
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input matInput type="text" placeholder="Phone" required name="phone"  [(ngModel)]="assign.assigned_Phone" >
+    </mat-form-field>
+    <br>
+  </form>
+  <button mat-button cdkFocusInitial (click)="createAssigned()">Finished</button>
+</div>
